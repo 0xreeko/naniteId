@@ -19,4 +19,8 @@ describe('nanite', () => {
         let _id = naniteId()
         expect(typeof _id).not.toEqual("number")
     })
+    it('isNotBigint', () => {
+        let _id = naniteId()
+        expect(typeof _id).not.toEqual("bigint")
+    })
 })
