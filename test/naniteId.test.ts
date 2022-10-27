@@ -11,4 +11,8 @@ describe('nanite', () => {
         let _regex = /^(0.)/gm;
         expect(_id).not.toEqual(_regex)
     });
+    it('isString', () => {
+        let _id = naniteId()
+        expect(typeof _id).toEqual("string")
+    });
 })
