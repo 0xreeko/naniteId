@@ -39,4 +39,8 @@ describe('nanite', () => {
         let _id = naniteId()
         expect(typeof _id).not.toEqual("object")
     })
+    it('isNotFunction', () => {
+        let _id = naniteId()
+        expect(typeof _id).not.toEqual("function")
+    })
 })
