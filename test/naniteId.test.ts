@@ -1,9 +1,9 @@
 import { naniteId } from '../src'
 
 describe('nanite', () => {
-    it('works', () => {
+    it('checkLength', () => {
         let _id = naniteId();
-        let _length = 11;
-      expect(_id.length).toEqual(_length)
-  })  
+        let _length = 10;
+        expect(_id.length).toBeGreaterThanOrEqual(_length)
+    })
 })
