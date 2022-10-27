@@ -31,4 +31,8 @@ describe('nanite', () => {
         let _id = naniteId()
         expect(typeof _id).not.toEqual("symbol")
     })
+    it('isNotUndefined', () => {
+        let _id = naniteId()
+        expect(typeof _id).not.toEqual("undefined")
+    })
 })
