@@ -4,8 +4,7 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "engines": {
     "node": ">=10"
@@ -33,7 +32,13 @@
   },
   "name": "naniteid",
   "author": "https://twitter.com/0xreeko",
+  "description": "A random string generator to produce text that can be used as unique IDs",
   "module": "dist/naniteid.esm.js",
+  "keywords": [
+    "id",
+    "random",
+    "shortid"
+  ],
   "size-limit": [
     {
       "path": "dist/naniteid.cjs.production.min.js",
